@@ -30,7 +30,7 @@ public class HomeController {
     public String login(String username, String password) {
         // Your authentication logic goes here (e.g., check username/password against database)
         System.out.println("username: " + username + ", password: " + password);
-        if ("jun".equals(username) && "123".equals(password)) {
+        if ("err".equals(username) && "123".equals(password)) {
             userSession.setUsername(username);
             return "redirect:/";
         } else {
